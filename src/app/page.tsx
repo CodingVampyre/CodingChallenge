@@ -5,7 +5,6 @@ import UserPost from "@/Components/UserPost/UserPost";
 import {useState} from "react";
 
 export default function Home() {
-    const userId = 2;
     const [inputUserId, setInputUserId] = useState<number>(1);
 
     const {data: user, error: userError} = UseRemoteFetchUser(inputUserId);
